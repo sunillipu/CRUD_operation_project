@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Home Page........</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+    h1{
+        font-family: cursive;
+        text-shadow:3px 3px 3px red,3px 3px 3px crimson,5px 5px 5px white;
+        margin-top: 20px;
+        font-size: 70px;
+
+    }
+    body{
+        background-color: chartreuse;
+    }
+    input{
+        border-radius: 5px;
+        box-shadow: 3px -3px 5px red;
+    }
+    form{
+        border: 1px white;
+    }
+    label{
+        text-anchor: start;
+    }
+    button{
+        margin-top: 10px;
+    }
+</style>
+<body>
+<h1 align="center">Insert Your Data Here...</h1>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-4 cal-md-6">
+            <form method="post">
+                {% csrf_token %}
+
+                <table align="center" border="0px" width="0px">
+
+
+
+    <tr>
+        <td>
+            <label ><b>Enter Product Id:</b></label>
+        </td>
+        <td><input type="text" name="product_id" placeholder="Product Id"></td>
+    </tr>
+    <tr>
+        <td>
+            <label><b>Enter Product Name:</b></label>
+        </td>
+        <td><input type="text" name="product_name" placeholder="Product Name"></td>
+    </tr>
+    <tr>
+        <td>
+            <label><b>Enter Product Color:</b></label>
+        </td>
+        <td><input type="text" name="product_color" placeholder="Product Color"></td>
+    </tr>
+    <tr>
+        <td>
+            <label><b>Enter Product Class:</b></label>
+        </td>
+        <td><input type="text" name="product_class" placeholder="Product Class"></td>
+    </tr>
+    <tr>
+        <td>
+            <label><b>Enter Product Price:</b></label>
+        </td>
+        <td><input type="text" name="product_price" placeholder="Product Price"></td>
+    </tr>
+         <tr>
+        <td>
+            <label><b>Enter Customer Name:</b></label>
+        </td>
+        <td><input type="text" name="customer_name" placeholder="Customer Name"></td>
+    </tr>
+         </tr>
+         <tr>
+        <td>
+            <label><b>Enter Customer Mobile No:</b></label>
+        </td>
+        <td><input type="text" name="customer_mobile" placeholder="Customer Mobile"></td>
+    </tr>
+                    </tr>
+         <tr>
+        <td>
+            <label><b>Enter Customer Email Id:</b></label>
+        </td>
+        <td><input type="text" name="customer_email" placeholder="Customer Email"></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <center>
+            <input type="submit" value="submit" class="btn btn-success">
+            <input type="reset" value="clear" class="btn btn-danger">
+            </center>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><a href="/#/"><m><u><b>Go To Home Page....</b></u></m></a> </td>
+    </tr>
+
+
+</table>
+            </form></div>
+    </div>
+</div>
+
+</body>
+
+</html>
